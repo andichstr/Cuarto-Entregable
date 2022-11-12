@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ingreso de productos</title>
+</head>
+<body>
+    <h1>Formulario de ingreso de productos</h1>
+    <form action="/api/productos" method="POST" id="productForm">
+        <div id="titleDiv">
+            <label for="title">Título</label>
+            <input name="title" type="text" placeholder="Ingrese el título del producto aquí"/>
+        </div>
+        <div id="priceDiv">
+            <label for="price">Precio</label>
+            <input name="price" type="number"/>
+        </div>
+        <div id="thumbnailDiv">
+            <label for="thumbnail">URL de la imágen</label>
+            <input name="thumbnail" type="text" placeholder="Ingrese la URL de la imágen del producto aquí"/>
+        </div>
+        <div id="submitDiv">
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Reiniciar"/>
+        </div>
+    </form>
+</body>
+</html>
